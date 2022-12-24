@@ -1,4 +1,5 @@
 module.exports = {
+  core: { builder: "@storybook/builder-vite" },
   stories: ["../stories/**/*.stories.@(ts|tsx|js|jsx)"],
   addons: [
     "@storybook/addon-links",
