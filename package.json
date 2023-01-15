@@ -13,7 +13,6 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
@@ -22,7 +21,10 @@
     "build-storybook": "storybook build"
   },
   "peerDependencies": {
-    "react": ">=16"
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "react": ">=16",
+    "react-html-props": "^2.0.2"
   },
   "husky": {
     "hooks": {
@@ -50,6 +52,7 @@
   "devDependencies": {
     "@babel/core": "^7.20.7",
     "@size-limit/preset-small-lib": "^8.1.0",
+    "@storybook/addon-a11y": "^7.0.0-beta.15",
     "@storybook/addon-essentials": "^7.0.0-beta.15",
     "@storybook/addon-info": "^6.0.0-alpha.2",
     "@storybook/addon-links": "^7.0.0-beta.15",
@@ -65,11 +68,14 @@
     "react-dom": "^18.2.0",
     "size-limit": "^8.1.0",
     "storybook": "^7.0.0-beta.15",
+    "storybook-dark-mode": "^2.0.4",
     "tailwindcss": "^3.2.4",
     "tsdx": "^0.14.1",
     "tslib": "^2.4.1",
     "typescript": "^4.9.4",
     "vite": "^3.2.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "classnames": "^2.3.2"
+  }
 }
