@@ -10,12 +10,12 @@
   "engines": {
     "node": ">=10"
   },
-  "dependencies": {
-    "classnames": "^2.3.2",
-    "react-html-props": "^2.0.2"
-  },
   "peerDependencies": {
-    "react": ">=16"
+    "@headlessui/react": "^1.7.7",
+    "classnames": "*",
+    "react": ">=16",
+    "react-html-props": "^2.0.2"
+    
   },
   "devDependencies": {
     "@babel/core": "^7.20.7",
