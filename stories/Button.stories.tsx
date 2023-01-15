@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, ButtonProps } from "../src/Button";
+import { Button, ButtonProps } from "../src/components/Button";
 import type { Meta, StoryObj } from "@storybook/react";
 
 const meta: Meta<typeof Button> = {
@@ -14,9 +14,8 @@ const meta: Meta<typeof Button> = {
 export default meta;
 type Story = StoryObj<typeof Button>;
 
-export const Black: Story = {
+export const Playground: Story = {
   args: {
-    color: "red",
     children: "Hello",
   },
 };
